@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import LoginContainer from './containers/LoginContainer';
-// import ProductList from './components/ProductListComponent';
-
+import Routes from './routes/Routes'
 function App() {
   return (
     <div className='App'>
-      <LoginContainer></LoginContainer>
+      <Routes/>
+      {/* <LoginContainer></LoginContainer> */}
       {/* <ProductList></ProductList> */}
+      {/* <DashboardContainer></DashboardContainer> */}
     </div>
     );
 }

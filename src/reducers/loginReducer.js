@@ -9,8 +9,10 @@ const loginReducer = (state, action) =>{
       return {...state, usernameError: action.playload};
     case 'setPasswordError':
       return {...state, passwordError: action.playload};
+    case 'SET_USER_DETAILS':
+      return {...state, userDetails: action.playload};
     default:
-      throw new Error();
+      return state
   }
 }
 export default loginReducer
